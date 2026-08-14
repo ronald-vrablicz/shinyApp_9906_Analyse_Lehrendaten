@@ -1,0 +1,11 @@
+/* Zur Anzeige des aktuellen Datenstandes */ 
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: #f8f9fa;
+    text-align: left;
+    font-size: 0.9em;
+    color: #6c757d;
+}
