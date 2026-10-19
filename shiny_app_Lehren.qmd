@@ -24,7 +24,7 @@ library(reactable)
 library(reactlog)
 library(shinybusy)
 library(IDEAFilter)    # für Zusatz Filter
-#library(epoxy)         # für text mit variablen daten
+library(epoxy)         # für text mit variablen daten
 # Für ProcessMining
 library(bupaR)
 #library(bupaverse)
@@ -32,9 +32,6 @@ library(bupaR)
 library(processmapR)
 library(DiagrammeR)
 
-print('port 9901: KMM_Explorer')
-
-hier <- paste0(here::here(),'/') # Slash am Ende des Pfades muss manuell hinzugefügt werden !
 
 if(Sys.getenv("COMPUTERNAME") == "ATHEWS0462P") {
   gitrepo <- "C:/Users/vrablicz_r/git_repositories"
@@ -42,8 +39,8 @@ if(Sys.getenv("COMPUTERNAME") == "ATHEWS0462P") {
 if(Sys.getenv("COMPUTERNAME") == "ATHENB0103C") {
   gitrepo <- "~/git_repositories"
 }
-if(Sys.getenv("COMPUTERNAME") == "VR-SurfacePro7") {
-  gitrepo <- "~/gitRepos"
+if(Sys.getenv("COMPUTERNAME") == "ATHEWS0541P") {
+  gitrepo <- "~/git_repos"
 }
 
 ### für Lehren Original DB
@@ -83,6 +80,11 @@ reactcol <-   list(
                 )
 ```
 
+```{r, eval=F}
+# Test Datenlesen
+dftest <- con_Lehre_Kerbl('9163', '2026-07-01')
+
+```
 
 
 #  {.sidebar width="14%"}

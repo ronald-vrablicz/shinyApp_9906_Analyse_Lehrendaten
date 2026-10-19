@@ -48,3 +48,4 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 /shiny_app_Lehren_files
+*.html
